@@ -10,8 +10,8 @@ quadratic <- function(a, b, c){
   if (d < 0)
     cat("Not real roots", "\n")
   if (d >= 0){
-    x1 <- -b + sqrt(d)
-    x2 <- -b - sqrt(d)
+    x1 <- (-b + sqrt(d))/(2*a)
+    x2 <- (-b - sqrt(d))/(2*a)
     cat("x1 = ", x1, "\n")
     cat("x2 = ", x2, "\n")
   }
